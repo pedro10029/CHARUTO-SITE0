@@ -1,0 +1,176 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOloLiriSTKkUOq2R+O15zz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pedro10029/CHARUTO-SITE0/blob/main/ATIVIDADES\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tg85uB8ESVJx",
+        "outputId": "97e24a08-5aef-4983-e752-c9a877e7ce23"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu nome: PEDRO\n",
+            "Digite sua idade: 17\n",
+            "Digite sua altura: 180\n",
+            "Olá PEDRO, você tem 17 anos e 180.0m de altura.\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input(\"Digite seu nome: \")\n",
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "altura = float(input(\"Digite sua altura: \"))\n",
+        "\n",
+        "print(f\"Olá {nome}, você tem {idade} anos e {altura}m de altura.\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ATIVIDADE 2: Estrutura Condicional (SE / SENÃO)"
+      ],
+      "metadata": {
+        "id": "LVRPGZIOSiXC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = float(input(\"Digite a nota do aluno: \"))\n",
+        "\n",
+        "if nota >= 7:\n",
+        "    print(\"✅ APROVADO\")\n",
+        "elif nota >= 5:\n",
+        "    print(\"⚠️ RECUPERAÇÃO\")\n",
+        "else:\n",
+        "    print(\"❌ REPROVADO\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 356
+        },
+        "id": "iik1RkkvSpTj",
+        "outputId": "57ffe905-a060-431a-feb9-f634866d7908"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_18947/1999580925.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mnota\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Digite a nota do aluno: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0mnota\u001b[0m \u001b[0;34m>=\u001b[0m \u001b[0;36m7\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"✅ APROVADO\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32melif\u001b[0m \u001b[0mnota\u001b[0m \u001b[0;34m>=\u001b[0m \u001b[0;36m5\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ATIVIDADE 3: Estrutura de Repetição (PARA)\n"
+      ],
+      "metadata": {
+        "id": "UJvjjPGRS8I2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Contar de 1 até 10\n",
+        "for numero in range(1, 11):\n",
+        "    print(\"Número:\", numero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XB2pD2oYS_VZ",
+        "outputId": "175afa7a-6603-4344-b96e-999cf56d29d5"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Número: 1\n",
+            "Número: 2\n",
+            "Número: 3\n",
+            "Número: 4\n",
+            "Número: 5\n",
+            "Número: 6\n",
+            "Número: 7\n",
+            "Número: 8\n",
+            "Número: 9\n",
+            "Número: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ATIVIDADE 4: Funções"
+      ],
+      "metadata": {
+        "id": "8H5_ZuN8TFEX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# CÓDIGO PARA TESTAR\n",
+        "def calcular_media(n1, n2, n3):\n",
+        "    media = (n1 + n2 + n3) / 3\n",
+        "    return media\n",
+        "\n",
+        "# Usar a função\n",
+        "resultado = calcular_media(7.5, 8.0, 6.5)\n",
+        "print(\"Média final:\", resultado)"
+      ],
+      "metadata": {
+        "id": "CePVsZB9TJiT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
